@@ -30,6 +30,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['dj-heroku.herokuapp.com']
 
+django_heroku.settings(locals())
+
 
 # Application definition
 
@@ -124,7 +126,7 @@ USE_TZ = True
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-django_heroku.settings(locals())
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
