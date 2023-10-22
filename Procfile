@@ -1,1 +1,2 @@
-web: gunicorn django_heroku.wsgi
+web: gunicorn dj_heroku.wsgi
+release: python manage.py migrate
